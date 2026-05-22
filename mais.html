@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mercado Livre - Mais</title>
+ 
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+ 
+  <style>
+ 
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+ 
+    body{
+      background:#ededed;
+      color:#333;
+    }
+ 
+    .topo{
+      background:#22C55E;
+      padding:20px 18px 15px;
+    }
+ 
+    .perfil{
+      display:flex;
+      align-items:center;
+      gap:15px;
+    }
+ 
+    .avatar{
+      width:65px;
+      height:65px;
+      border-radius:50%;
+      background:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:28px;
+      border:1px solid #ccc;
+    }
+ 
+    .perfil-info h2{
+      font-size:22px;
+      margin-bottom:5px;
+    }
+ 
+    .perfil-info p{
+      font-size:18px;
+    }
+ 
+    .conteudo{
+      background:#f2f2f2;
+      padding:20px;
+      padding-bottom:120px;
+    }
+ 
+    .item{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:22px 10px;
+      border-bottom:1px solid #ddd;
+      font-size:20px;
+      background:#f2f2f2;
+ 
+      transition:0.3s;
+      cursor:pointer;
+    }
+ 
+    .item:hover{
+      background:#3483fa;
+      color:#fff;
+      transform:scale(1.01);
+      box-shadow:0 4px 12px rgba(52,131,250,0.4);
+    }
+ 
+    .item:hover i{
+      color:#fff;
+    }
+ 
+    .item-esquerda{
+      display:flex;
+      align-items:center;
+      gap:20px;
+    }
+ 
+    .item i{
+      font-size:28px;
+      width:35px;
+      transition:0.3s;
+    }
+ 
+    .titulo{
+      font-size:22px;
+      font-weight:500;
+    }
+ 
+    .secao{
+      margin-top:25px;
+      margin-bottom:10px;
+      color:#777;
+      font-size:18px;
+      font-weight:bold;
+    }
+ 
+    .bottom{
+      position:fixed;
+      bottom:0;
+      left:0;
+      width:100%;
+      background:#fff;
+      display:flex;
+      justify-content:space-around;
+      padding:12px 0;
+      border-top:1px solid #ccc;
+    }
+ 
+    .bottom-item{
+      text-align:center;
+      color:#222;
+      font-size:14px;
+      transition:0.3s;
+      cursor:pointer;
+    }
+    a{
+        text-decoration: none;
+        color:inherit;
+    }
+ 
+    .bottom-item:hover{
+      color:#3483fa;
+      transform:translateY(-3px);
+    }
+ 
+    .bottom-item i{
+      display:block;
+      font-size:24px;
+      margin-bottom:5px;
+    }
+ 
+    .ativo{
+      color:#3483fa;
+    }
+ 
+  </style>
+</head>
+ 
+<body>
+ 
+  <div class="topo">
+ 
+    <div class="perfil">
+      <div class="avatar">Us</div>
+ 
+      <div class="perfil-info">
+        <h2>Usurio</h2>
+        <p>Meu perfil ></p>
+      </div>
+    </div>
+ 
+  </div>
+ 
+  <div class="conteudo">
+ 
+    <div class="item">
+      <div class="item-esquerda">
+        <i class="fa-solid fa-house"></i>
+        <span class="titulo">Inicio</span>
+      </div>
+    </div>
+ 
+    <div class="item">
+      <div class="item-esquerda">
+        <i class="fa-solid fa-headset"></i>
+        <span class="titulo">Ajuda</span>
+      </div>
+    </div>
+ 
+    <div class="secao">Minha atividade</div>
+ 
+    <div class="item">
+      <div class="item-esquerda">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="titulo">Minhas compras</span>
+      </div>
+    </div>
+ 
+    <div class="item">
+      <div class="item-esquerda">
+        <i class="fa-regular fa-heart"></i>
+        <span class="titulo">Favoritos</span>
+      </div>
+    </div>
+ 
+    <div class="item">
+      <div class="item-esquerda">
+        <i class="fa-regular fa-message"></i>
+        <span class="titulo">Perguntas</span>
+      </div>
+    </div>
+ 
+    <div class="item">
+      <div class="item-esquerda">
+        <i class="fa-regular fa-star"></i>
+        <span class="titulo">Minhas opiniões</span>
+      </div>
+    </div>
+ 
+    <div class="item">
+      <div class="item-esquerda">
+        <i class="fa-regular fa-clock"></i>
+        <span class="titulo">Histórico</span>
+      </div>
+    </div>
+ 
+    <div class="item">
+      <div class="item-esquerda">
+        <i class="fa-solid fa-tag"></i>
+        <span class="titulo">Vender</span>
+      </div>
+    </div>
+ 
+    <div class="item">
+      <div class="item-esquerda">
+        <i class="fa-solid fa-store"></i>
+        <span class="titulo">Central de vendedores</span>
+      </div>
+    </div>
+ 
+    <div class="item">
+      <div class="item-esquerda">
+        <i class="fa-regular fa-rectangle-list"></i>
+        <span class="titulo">Faturamento</span>
+      </div>
+    </div>
+ 
+    <div class="item">
+      <div class="item-esquerda">
+        <i class="fa-solid fa-gear"></i>
+        <span class="titulo">Configurações</span>
+      </div>
+    </div>
+ 
+    <div class="item">
+      <span class="titulo">Termos e condições</span>
+    </div>
+ 
+    <div class="item">
+      <span class="titulo">Como cuidamos da sua privacidade</span>
+    </div>
+ 
+    <div class="item">
+      <span class="titulo">Promoções atuais</span>
+    </div>
+ 
+    <div class="item">
+      <span class="titulo">Sobre TechMarket</span>
+    </div>
+ 
+  </div>
+  
+  <div class="bottom">
+ 
+    <div class="bottom-item">
+      <i class="fa-solid fa-house"></i>
+       <a href="index.html">inicio</a>
+    </div>
+ 
+    <div class="bottom-item">
+      <i class="fa-solid fa-cart-shopping"></i>
+      Carrinho
+    </div>
+ 
+    <div class="bottom-item">
+      <i class="fa-solid fa-table-cells-large"></i>
+       <a href="conversas.html">conversas</a>
+    </div>
+ 
+    <div class="bottom-item ativo">
+      <i class="fa-solid fa-bars"></i>
+      Mais
+    </div>
+ 
+  </div>
+ 
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat Azul</title>
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+ 
+<style>
+ 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter', sans-serif;
+}
+ 
+body{
+    background:#f2f2f2;
+}
+ 
+/* CABEÇALHO */
+ 
+.topo{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#22C55E;
+    padding:25px;
+    border-radius:0 0 25px 25px;
+    margin-bottom:30px;
+}
+ 
+.topo h1{
+    font-size:38px;
+    font-weight:600;
+    color:white;
+}
+ 
+.icons{
+    display:flex;
+    gap:25px;
+}
+ 
+.icons span{
+    font-size:28px;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+ 
+/* HOVER AZUL */
+.icons span:hover{
+    color:#2563EB;
+    transform:scale(1.2);
+}
+ 
+/* CONTEUDO */
+ 
+.container{
+    width:100%;
+    padding:0 25px 120px;
+}
+ 
+/* FILTROS */
+ 
+.filtros{
+    display:flex;
+    gap:15px;
+    margin-bottom:35px;
+}
+ 
+.filtros button{
+    padding:14px 22px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+ 
+/* HOVER AZUL */
+.filtros button:hover{
+    background:#DBEAFE;
+    color:#2563EB;
+    transform:scale(1.05);
+}
+ 
+/* CONVERSAS */
+ 
+.chat-item{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    background:white;
+    padding:18px;
+    border-radius:20px;
+    margin-bottom:20px;
+    transition:0.3s;
+    cursor:pointer;
+}
+ 
+/* HOVER AZUL */
+.chat-item:hover{
+    background:#DBEAFE;
+    transform:scale(1.03);
+    box-shadow:0 8px 18px rgba(37,99,235,0.25);
+}
+ 
+.chat-item img{
+    width:80px;
+    height:80px;
+    border-radius:18px;
+    object-fit:cover;
+}
+ 
+.info{
+    flex:1;
+}
+ 
+.info h3{
+    font-size:20px;
+    margin-bottom:5px;
+    transition:0.3s;
+}
+ 
+.info p{
+    color:#666;
+    transition:0.3s;
+}
+ 
+.chat-item:hover h3{
+    color:#2563EB;
+}
+ 
+.chat-item:hover p{
+    color:#1D4ED8;
+}
+ 
+.hora{
+    color:#666;
+}
+ 
+/* MENU INFERIOR */
+ 
+ .bottom{
+      position:fixed;
+      bottom:0;
+      left:0;
+      width:100%;
+      background:#fff;
+      display:flex;
+      justify-content:space-around;
+      padding:12px 0;
+      border-top:1px solid #ccc;
+    }
+ 
+    .bottom-item{
+      text-align:center;
+      color:#222;
+      font-size:14px;
+      transition:0.3s;
+      cursor:pointer;
+    }
+    a{
+        text-decoration: none;
+        color:inherit;
+    }
+ 
+    .bottom-item:hover{
+      color:#3483fa;
+      transform:translateY(-3px);
+    }
+ 
+    .bottom-item i{
+      display:block;
+      font-size:24px;
+      margin-bottom:5px;
+    }
+ 
+</style>
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ 
+</head>
+<body>
+ 
+<!-- CABEÇALHO -->
+<div class="topo">
+ 
+    <h1>Chat</h1>
+ 
+    <div class="icons">
+        <span>⌕</span>
+        <span>✎</span>
+    </div>
+ 
+</div>
+ 
+<div class="container">
+ 
+    <!-- FILTROS -->
+    <div class="filtros">
+        <button>Todas</button>
+        <button>Vendendo</button>
+        <button>Comprando</button>
+    </div>
+ 
+    <!-- CONVERSAS -->
+    <div class="chat-item">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop">
+ 
+        <div class="info">
+            <h3>Ana Souza</h3>
+            <p>Onde posso descartar pilhas usadas?</p>
+        </div>
+ 
+        <div class="hora">16:00</div>
+    </div>
+ 
+    <div class="chat-item">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop">
+ 
+        <div class="info">
+            <h3>João Pedro</h3>
+            <p>Notebook antigo pode ir no ecoponto?</p>
+        </div>
+ 
+        <div class="hora">15:30</div>
+    </div>
+ 
+    <div class="chat-item">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop">
+ 
+        <div class="info">
+            <h3>Camila Alves</h3>
+            <p>Como descartar carregadores quebrados?</p>
+        </div>
+ 
+        <div class="hora">14:50</div>
+    </div>
+ 
+    <div class="chat-item">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop">
+ 
+        <div class="info">
+            <h3>Lucas Ferreira</h3>
+            <p>Vocês recolhem televisões antigas?</p>
+        </div>
+ 
+        <div class="hora">13:40</div>
+    </div>
+ 
+    <div class="chat-item">
+        <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=400&auto=format&fit=crop">
+ 
+        <div class="info">
+            <h3>Mariana Lima</h3>
+            <p>Tem coleta para celulares quebrados?</p>
+        </div>
+ 
+        <div class="hora">12:15</div>
+    </div>
+ 
+</div>
+ 
+<!-- MENU INFERIOR -->
+<div class="bottom">
+ 
+    <div class="bottom-item">
+        <i class="fa-solid fa-house"></i>
+        <a href="index.html">inicio</a>
+    </div>
+ 
+    <div class="bottom-item">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Carrinho
+    </div>
+ 
+    <div class="bottom-item">
+        <i class="fa-solid fa-table-cells-large"></i>
+        Conversas
+    </div>
+ 
+    <div class="bottom-item">
+        <i class="fa-solid fa-bars"></i>
+         <a href="mais.html">mais</a>
+    </div>
+ 
+</div>
+ 
+</body>
+</html>
